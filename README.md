@@ -10,8 +10,6 @@ Usage:
 "Foobar".sed('s/O/p/ig') # => Fppbar
 ```
 
-NOTE: As of now, only /g works.
-
 ## License
 
 Copyright (c) 2011, Nick Markwell <nick@duckinator.net>
