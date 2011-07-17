@@ -1,13 +1,16 @@
 ## simple text formatting
 
-Usage:
+Usage (from `tests/rbsed_test.rb`):
 
 ```ruby
-"Foobar".sed('s/o/p/')   # => Fpobar
-"Foobar".sed('s/O/p')    # => Foobar
-"Foobar".sed('s/O/p/i')  # => Fpobar
-"Foobar".sed('s/o/p/g')  # => Fppbar
-"Foobar".sed('s/O/p/ig') # => Fppbar
+"Foobar".sed('s/o/p')    # => "Fpobar"
+"Foobar".sed('s/O/p')    # => "Foobar"
+"Foobar".sed('s/o/p/')   # => "Fpobar"
+"Foobar".sed('s/O/p/')   # => "Foobar"
+"Foobar".sed('s/O/p/i')  # => "Fpobar"
+"Foobar".sed('s/o/p/g')  # => "Fppbar"
+"Foobar".sed('s/O/p/ig') # => "Fppbar"
+"Foobar".sed('s/O/p/g')  # => "Foobar"
 ```
 
 ## License
