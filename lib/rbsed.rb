@@ -7,6 +7,7 @@ class String
     flags   = []
     options = 0
     parts   = str.split('/')
+    result  = ''
 
     raise "Invalid sed command" if parts.length < 3
 
@@ -28,11 +29,11 @@ class String
     end
 
     if flags.include?('g')
-      self.gsub!(match) { parts[2] }
+      result = self.gsub(match) { parts[2] }
     else
-      self.sub! (match) { parts[2] }
+      result = self.sub (match) { parts[2] }
     end
 
-    self
+    result
   end
 end
