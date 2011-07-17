@@ -24,4 +24,16 @@ context 'RBSed - ' do
     asserts("Foobar\nFoobar".sed('s/O/p/ig')) { "Fppbar\nFppbar" }
     asserts("Foobar\nFoobar".sed('s/O/p/g' )) { "Foobar\nFoobar" }
   end
+
+  context 'nondestructive' do
+    x = "Foobar"
+    x.sed('s/o/p')
+    asserts(x) { "Foobar" }
+  end
+
+  context 'destructive' do
+    x = "Foobar"
+    x.sed!('s/o/p')
+    asserts(x) { "Fpobar" }
+  end
 end

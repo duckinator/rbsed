@@ -1,7 +1,7 @@
 $: << File.dirname(__FILE__) unless $:.include?(File.dirname(__FILE__))
 
 class String
-  def sed(str)
+  def sed!(str)
     match   = nil
     flags   = []
     options = 0
@@ -28,15 +28,15 @@ class String
     end
 
     if flags.include?('g')
-      result = self.gsub(match) { parts[2] }
+      self.gsub!(match) { parts[2] }
     else
-      result = self.sub (match) { parts[2] }
+      self.sub! (match) { parts[2] }
     end
 
-    result
+    self
   end
 
-  def sed!(str)
-    self = self.sed!(str)
+  def sed(str)
+    self.clone.sed!(str)
   end
 end
