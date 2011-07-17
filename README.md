@@ -13,6 +13,8 @@ Usage (from `tests/rbsed_test.rb`):
 "Foobar".sed('s/O/p/g')  # => "Foobar"
 ```
 
+`String#sed(str)` is non-destructive, `String#sed!(str)` is destructive.
+
 ## License
 
 Copyright (c) 2011, Nick Markwell <nick@duckinator.net>
