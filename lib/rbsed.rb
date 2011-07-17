@@ -1,7 +1,6 @@
 $: << File.dirname(__FILE__) unless $:.include?(File.dirname(__FILE__))
 
 class String
-
   def sed(str)
     match   = nil
     flags   = []
@@ -35,5 +34,9 @@ class String
     end
 
     result
+  end
+
+  def sed!(str)
+    self = self.sed!(str)
   end
 end
