@@ -5,5 +5,5 @@ group :development do
   gem "bundler", "~> 1.0.0"
 end
 
-# Specify your gem's dependencies in configru.gemspec
+# Specify your gem's dependencies in rbsed.gemspec
 gemspec
