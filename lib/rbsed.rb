@@ -30,7 +30,7 @@ class String
     if flags.include?('g')
       self.gsub!(match) { parts[2] }
     else
-      self.sub! (match) { parts[2] }
+      self.sub!(match) { parts[2] }
     end
 
     self
