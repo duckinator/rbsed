@@ -5,8 +5,8 @@ require "rbsed/version"
 Gem::Specification.new do |s|
   s.name        = "rbsed"
   s.version     = RBSed::VERSION
-  s.authors     = ["Nick Markwell"]
-  s.email       = ["nick@duckinator.net"]
+  s.authors     = ["Marie Markwell"]
+  s.email       = ["me@marie.so"]
   s.homepage    = "https://github.com/duckinator/rbsed"
   s.summary     = %q{Provides str.sed('s/a/b/flags') and similar.}
   s.description = s.summary

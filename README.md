@@ -1,4 +1,4 @@
-## simple text formatting
+## sed-like text replace
 
 Usage (from `tests/rbsed_test.rb`):
 
@@ -17,7 +17,7 @@ Usage (from `tests/rbsed_test.rb`):
 
 ## License
 
-Copyright (c) 2011, Nick Markwell <nick@duckinator.net>
+Copyright (c) 2011 Marie Markwell <me@marie.so>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
