@@ -25,6 +25,10 @@ context 'RBSed - ' do
     asserts("Foobar\nFoobar".sed('s/O/p/g' )) { "Foobar\nFoobar" }
   end
 
+  context 'fixed bugs' do # TODO: Reorganize tests
+    asserts("Foobar".sed('s/bar/')) { "Foo" }
+  end
+
   context 'nondestructive' do
     x = "Foobar"
     x.sed('s/o/p')
