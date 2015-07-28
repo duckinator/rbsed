@@ -5,7 +5,7 @@ class String
     match   = nil
     flags   = []
     options = 0
-    parts   = str.split('/')
+    parts   = str.split('/', -1)
     result  = ''
 
     raise "Invalid sed command" if parts.length < 3
